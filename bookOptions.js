@@ -16,7 +16,7 @@ export default function bookOptions() {
     if (JSON.parse(localStorage.bookOptions).includes(book)) {
       cssClass = `class="selected"`;
     }
-    bookHtml += `<button ${cssClass} id="${book}" title="Include/Exclude ${getFullBookName(book)}">${book}</button>`;
+    bookHtml += `<button ${cssClass} id="${book}" title="Thêm/Bỏ ${getFullBookName(book)}">${book}</button>`;
   });
   bookOptionsArea.innerHTML = bookHtml;
 
