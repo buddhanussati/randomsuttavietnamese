@@ -45,9 +45,9 @@ function buildSutta(slug) {
     .then(response => response.json())
     .then(data => {
       const html = data.root_text?.text || "<p>Đang cập nhật.</p>";
-      const scLink = `<a href="https://suttacentral.net/${slug}/${language}/${translator}"  title="Open in SuttaCentral.net" rel="noreferrer" target="_blank"><img height="20px" src="./images/favicon-sc.png"></a>`;
-      const scLightLink = `<a href="https://sc.readingfaithfully.org/?q=${slug}"  title="Open in SC Light" rel="noreferrer" target="_blank"><img height="15px" src="./images/favicon-sc-light-tan.png"></a>`;
-      const citationHelperLink = `<a href="https://sutta.readingfaithfully.org/?q=${slug}"  title="Open in Citation Helper" rel="noreferrer" target="_blank"><img height="17px" src="./images/favicon-CH.png" ></a>`;
+      const scLink = `<a href="https://suttacentral.net/${slug}/${language}/${translator}"  title="Mở trong SuttaCentral.net" rel="noreferrer" target="_blank"><img height="20px" src="./images/favicon-sc.png"></a>`;
+      const scLightLink = `<a href="https://sc.readingfaithfully.org/?q=${slug}"  title="Mở trong giao diện siêu nhẹ" rel="noreferrer" target="_blank"><img height="15px" src="./images/favicon-sc-light-tan.png"></a>`;
+      const citationHelperLink = `<a href="https://sutta.readingfaithfully.org/?q=${slug}"  title="Mở trong trình hỗ trợ trích dẫn" rel="noreferrer" target="_blank"><img height="17px" src="./images/favicon-CH.png" ></a>`;
       suttaArea.innerHTML = '<p class="sc-link">' + scLink + citationHelperLink + scLightLink + "</p>" + html;
       const pageTile = document.querySelector("h1");
       document.title = pageTile.textContent;
