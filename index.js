@@ -16,11 +16,11 @@ const language = "vi";
 const translator = "minh_chau";
 // [ ] below needs to be translated when changing to a new language
 const disclaimer =
-  "Disclaimer: This random sutta generator is not to be used to somehow get an answer from the universe as to what Dhamma we need to hear most at this moment in time. It’s just code. Better to ask a good kalyanamitta what Dhamma you need to reflect on.";
-clickInstruction.innerText = "Click to get a";
-const buttonText = "Random Sutta";
-translatorInfo.innerText = "All translations are by Bhikkhu Sujato as found on SuttaCentral.net";
-getDaily.innerHTML = `Get a new sutta by email each day from <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">Daily.ReadingFaithfully.org</a>`;
+  "Lưu ý: Công cụ chọn kinh ngẫu nhiên này không phải để dùng như một cách nhận câu trả lời từ vũ trụ về giáo pháp (Dhamma) mà bạn cần nghe nhất vào thời điểm hiện tại. Đây chỉ là một đoạn mã lập trình. Tốt hơn hết, bạn nên hỏi một thiện tri thức (kalyanamitta) đáng tin cậy về giáo pháp để bạn học tập.";
+clickInstruction.innerText = "Nhấn để khám phá một";
+const buttonText = "Bài kinh ngẫu nhiên";
+translatorInfo.innerText = "Tất cả các bản dịch đều do Hòa Thượng Thích Minh Châu thực hiện, được đăng tải trên trang SuttaCentral.net";
+getDaily.innerHTML = `Nhận một bài kinh mới qua email mỗi ngày từ <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">Daily.ReadingFaithfully.org</a>`;
 // end of building your own version
 
 bookOptions();
@@ -44,7 +44,7 @@ function buildSutta(slug) {
   fetch(`https://suttacentral.net/api/suttas/${slug}/${translator}?lang=${language}`)
     .then(response => response.json())
     .then(data => {
-      const html = data.root_text?.text || "<p>No content available.</p>";
+      const html = data.root_text?.text || "<p>Đang cập nhật.</p>";
       const scLink = `<a href="https://suttacentral.net/${slug}/${language}/${translator}"  title="Open in SuttaCentral.net" rel="noreferrer" target="_blank"><img height="20px" src="./images/favicon-sc.png"></a>`;
       const scLightLink = `<a href="https://sc.readingfaithfully.org/?q=${slug}"  title="Open in SC Light" rel="noreferrer" target="_blank"><img height="15px" src="./images/favicon-sc-light-tan.png"></a>`;
       const citationHelperLink = `<a href="https://sutta.readingfaithfully.org/?q=${slug}"  title="Open in Citation Helper" rel="noreferrer" target="_blank"><img height="17px" src="./images/favicon-CH.png" ></a>`;
@@ -55,7 +55,7 @@ function buildSutta(slug) {
       randomButton.innerText = buttonText;
     })
     .catch(error => {
-      console.log("Something went wrong");
+      console.log("Đã xảy ra lỗi");
       buildSutta(ids[Math.floor(Math.random() * ids.length)]);
     });
 }
