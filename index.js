@@ -17,7 +17,7 @@ const translator = "minh_chau";
 // [ ] below needs to be translated when changing to a new language
 const disclaimer =
   "Lưu ý: Công cụ chọn kinh ngẫu nhiên này không phải để dùng như một cách nhận câu trả lời từ vũ trụ về giáo pháp (Dhamma) mà bạn cần nghe nhất vào thời điểm hiện tại. Đây chỉ là một đoạn mã lập trình. Tốt hơn hết, bạn nên hỏi một thiện tri thức (kalyanamitta) đáng tin cậy về giáo pháp để bạn học tập.";
-clickInstruction.innerText = "Nhấn để khám phá";
+clickInstruction.innerText = "Nhấn để chọn một";
 const buttonText = "Bài kinh ngẫu nhiên";
 translatorInfo.innerText = "Tất cả các bản dịch đều do Hòa Thượng Thích Minh Châu thực hiện, được đăng tải trên trang SuttaCentral.net";
 getDaily.innerHTML = `Nhận một bài kinh mới qua email mỗi ngày từ <a href="http://daily.readingfaithfully.org" title="Daily Suttas" rel="noreferrer" target="_blank">Daily.ReadingFaithfully.org</a>`;
