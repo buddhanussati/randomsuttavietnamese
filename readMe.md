@@ -2,8 +2,8 @@
 
 **Phiên bản trực tiếp:**
 
-- Tiếng Việt [buddhanussati.github.io/randomsuttavietnamese](https://buddhanussati.github.io/randomsuttavietnamese/)
-- Tiếng Anh [r.readingfaithfully.org](https://r.readingfaithfully.org/)
+- Tiếng Việt:  [buddhanussati.github.io/randomsuttavietnamese](https://buddhanussati.github.io/randomsuttavietnamese/)
+- Tiếng Anh:  [r.readingfaithfully.org](https://r.readingfaithfully.org/)
 
 Ứng dụng này cho phép bạn nhận một bài kinh ngẫu nhiên mỗi lần nhấp chuột. Danh sách các mã số kinh có thể được tìm thấy trong tệp [ids.js](https://github.com/thesunshade/random-sc/blob/main/ids.js).
 
