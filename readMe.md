@@ -17,13 +17,13 @@ Saṁyutta Nikāya (Tương Ưng Bộ Kinh)
 
 Aṅguttara Nikāya (Tăng Chi Bộ Kinh)
 
-Khuddakapāṭha (Tiểu Bộ Kinh - Khuddakapāṭha)
+Khuddakapāṭha (Kinh Tiểu Tụng)
 
 Dhammapada (Kinh Pháp Cú)
 
-Udāna (Kinh Tập)
+Udāna (Kinh Phật Tự Thuyết)
 
-Itivuttaka (Kinh Tập)
+Itivuttaka (Kinh Phật Thuyết Như Vậy)
 
 Sutta Nipāta (Kinh Tập)
 
